@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srcviewserver"
+version = "0.1.0a0"
+description = "A simple HTTP server that serves source files with syntax highlighting."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fspathverbs",
+    "guess-file-mime-type",
+    "httppackets",
+    "pygments",
+    "six",
+    "textcompat",
+    "typing; python_version < '3.5'",
+]
+
+[project.scripts]
+srcviewserver = "srcviewserver:main"
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/srcviewserver"
+"Bug Tracker" = "https://github.com/jifengwu2k/srcviewserver/issues"
+
+[tool.setuptools]
+py-modules = ["srcviewserver"]

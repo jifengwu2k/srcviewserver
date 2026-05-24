@@ -1,0 +1,7 @@
+fspathverbs
+guess-file-mime-type
+httppackets
+pygments
+six
+textcompat
+typing; python_version < '3.5'
